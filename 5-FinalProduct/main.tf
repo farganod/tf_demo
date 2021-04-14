@@ -1,3 +1,8 @@
+#Data resoruces to get the az in regions deploying to
+data "aws_availability_zones" "available" {
+  state = "available"
+}
+
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
