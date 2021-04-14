@@ -9,6 +9,7 @@ phases:
       - "unzip terraform_0.14.9_linux_amd64.zip"
       - "mv terraform /usr/local/bin/"
       - "terraform -version"
+      - cd ./5-FinalProduct/
   pre_build:
     commands:
       - terraform init
