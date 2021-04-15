@@ -14,8 +14,9 @@ This code base helps breakdown how to use terraform using simple examples to est
 
 ## Pre-requisites
 
-Prior to using this repo you will need terraform installed on the system running the code link to Terraform site below:
+Prior to using this repo you will need awscli and terraform installed on the system running the code. Links to instructions below:
 
+* [AWSCLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
 * [Terraform Download](https://www.terraform.io/downloads.html)
 * [Terraform Install Guide](https://learn.hashicorp.com/terraform/getting-started/install)
 
