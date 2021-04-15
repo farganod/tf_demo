@@ -26,7 +26,7 @@ module "vpc" {
   }
 
 }
-/* 
+
 # Module to create the eks cluster with IRSA enabled
 module "cluster" {
   source          = "terraform-aws-modules/eks/aws"
@@ -46,4 +46,3 @@ module "cluster" {
   	root_volume_type = "gp2"
   }
 }
-*/
