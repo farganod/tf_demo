@@ -27,6 +27,24 @@ module "vpc" {
 
 }
 
+/*
+# Data for cluster deployed to used for kube provider
+data "aws_eks_cluster" "cluster" {
+  name = module.cluster.cluster_id
+}
+
+# Data for cluster auth deployed to used for kube provider
+data "aws_eks_cluster_auth" "cluster" {
+  name = module.cluster.cluster_id
+}
+
+# Establishes kube proivder for configuring the IRSA
+provider "kubernetes" {
+  host                   = data.aws_eks_cluster.cluster.endpoint
+  cluster_ca_certificate = base64decode(data.aws_eks_cluster.cluster.certificate_authority.0.data)
+  token                  = data.aws_eks_cluster_auth.cluster.token
+}
+
 # Module to create the eks cluster with IRSA enabled
 module "cluster" {
   source          = "terraform-aws-modules/eks/aws"
@@ -46,3 +64,4 @@ module "cluster" {
   	root_volume_type = "gp2"
   }
 }
+*/
