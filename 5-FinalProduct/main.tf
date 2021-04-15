@@ -26,3 +26,24 @@ module "vpc" {
   }
 
 }
+/* 
+# Module to create the eks cluster with IRSA enabled
+module "cluster" {
+  source          = "terraform-aws-modules/eks/aws"
+  cluster_name    = var.env_name
+  cluster_version = "1.19"
+  vpc_id          = module.vpc.vpc_id
+  subnets         = module.vpc.public_subnets
+  enable_irsa     = true
+
+  worker_groups = [
+    {
+      instance_type = "t3.medium"
+      asg_max_size  = 3
+    }
+  ]
+  workers_group_defaults = {
+  	root_volume_type = "gp2"
+  }
+}
+*/
