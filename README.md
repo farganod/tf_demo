@@ -8,7 +8,7 @@ This code base helps breakdown how to use terraform using simple examples to est
 * 2-RemoteState: Setting up a remote state to ensure the code doesn't continous deploy and it's centrally managed
 * 3-Variables: Setting up varibles to provide data to resoruce parameters
 * 4-Modules: Referencing modules `3-Varibales` stack to deploy the same resource
-* 5-FinalProduct: Using [AWS CodeBuild]() and [AWS CodePipeline]() to setup a terrform pipeline to deploy the stack using the `buildspec.yaml` file to orchestrate the build 
+* 5-FinalProduct: Using [AWS CodeBuild](https://aws.amazon.com/codebuild/) and [AWS CodePipeline](https://aws.amazon.com/codepipeline/) to setup a terrform pipeline to deploy the stack using the `buildspec.yaml` file to orchestrate the build 
 
 # Usage
 
