@@ -1,5 +1,5 @@
 #Data resoruces to get the az in regions deploying to
-# Comment to push
+# Comment to push push
 data "aws_availability_zones" "available" {
   state = "available"
 }
@@ -28,7 +28,7 @@ module "vpc" {
 
 }
 
-/*
+
 # Data for cluster deployed to used for kube provider
 data "aws_eks_cluster" "cluster" {
   name = module.cluster.cluster_id
@@ -65,4 +65,3 @@ module "cluster" {
   	root_volume_type = "gp2"
   }
 }
-*/
