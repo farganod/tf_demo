@@ -14,8 +14,9 @@ provider "aws" {
 resource "aws_vpc" "this" {
   cidr_block = "10.0.0.0/16"
 }
-
+/*
 resource "aws_vpc" "that" {
   provider = aws.east2
   cidr_block = "10.0.0.0/16"
 }
+*/
