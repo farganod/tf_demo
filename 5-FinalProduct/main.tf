@@ -1,4 +1,5 @@
 #Data resoruces to get the az in regions deploying to
+# Comment to push
 data "aws_availability_zones" "available" {
   state = "available"
 }
