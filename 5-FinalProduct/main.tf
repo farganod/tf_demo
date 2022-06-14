@@ -28,7 +28,7 @@ module "vpc" {
 
 }
 
-
+/* Commenting out due to cluster module change, will need to update below to support new module
 # Data for cluster deployed to used for kube provider
 data "aws_eks_cluster" "cluster" {
   name = module.cluster.cluster_id
@@ -52,16 +52,17 @@ module "cluster" {
   cluster_name    = var.env_name
   cluster_version = "1.19"
   vpc_id          = module.vpc.vpc_id
-  subnets         = module.vpc.public_subnets
+  subnet_ids      = module.vpc.public_subnets
   enable_irsa     = true
 
-  worker_groups = [
+  self_managed_node_groups = [
     {
       instance_type = "t3.medium"
       asg_max_size  = 3
     }
   ]
-  workers_group_defaults = {
+  self_managed_node_group_defaults = {
   	root_volume_type = "gp2"
   }
 }
+*/ 

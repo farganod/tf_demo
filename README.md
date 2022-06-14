@@ -26,7 +26,6 @@ Prior to using this repo you will need awscli and terraform installed on the sys
 
 * [TF Cheatsheet](https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto/https:/acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2020/11/terraform-cheatsheet-from-ACG.pdf)
 
-
 This directory is intended to be run locally
 
 Getting started you'll need to open a `terminal` window and change direcotries to the working directory (ex `cd ./tf_demo/1-Basics/`)
